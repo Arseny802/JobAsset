@@ -1,4 +1,4 @@
-package com.example.jobasset;
+package com.example.job_asset;
 
 import org.junit.Test;
 

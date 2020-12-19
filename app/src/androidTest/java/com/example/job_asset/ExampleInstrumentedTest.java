@@ -1,4 +1,4 @@
-package com.example.jobasset;
+package com.example.job_asset;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.jobasset", appContext.getPackageName());
+        assertEquals("com.example.job_asset", appContext.getPackageName());
     }
 }
