@@ -1,79 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ReflectorActivity"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:visibility="visible"
-    tools:context=".reflector.ReflectorActivity"
-    tools:visibility="visible">
-    
-    <LinearLayout
-        android:id="@+id/ReflectorLinear"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    
-        <TextView
-            android:id="@+id/MorningJobsLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="80dp"
-            android:text="MorningJobs" />
-    
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/MorningJobs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="80dp"
-            android:paddingVertical="10dp"
-            android:visibility="visible"
-            tools:visibility="visible">
-
-        </androidx.recyclerview.widget.RecyclerView>
-    
-        <TextView
-            android:id="@+id/DailyJobsLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="100dp"
-            android:text="DailyJobs" />
-    
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/DailyJobs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/text_small_margin"
-            android:paddingHorizontal="100dp"
-            android:paddingVertical="10dp"
-            android:visibility="visible"
-            tools:visibility="visible">
-    
-        </androidx.recyclerview.widget.RecyclerView>
-    
-        <TextView
-            android:id="@+id/EveningJobsLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="120dp"
-            android:text="EveningJobs" />
-    
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/EveningJobs"
-            android:layout_width="495dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/text_small_margin"
-            android:paddingHorizontal="120dp"
-            android:paddingVertical="10dp"
-            android:visibility="visible"
-            tools:visibility="visible">
-    
-        </androidx.recyclerview.widget.RecyclerView>
-    </LinearLayout>
-
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ReflectorActivity"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:visibility="visible"
+	tools:context=".reflector.ReflectorActivity"
+	tools:visibility="visible">
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<LinearLayout
+			android:id="@+id/ReflectorLinear"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent">
+			
+			<TextView
+				android:id="@+id/MorningJobsLabel"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingHorizontal="80dp"
+				android:text="MorningJobs" />
+			
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/MorningJobs"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingHorizontal="80dp"
+				android:paddingVertical="10dp"
+				android:isScrollContainer="false"
+				android:visibility="visible"
+				tools:visibility="visible">
+			
+			</androidx.recyclerview.widget.RecyclerView>
+			
+			<TextView
+				android:id="@+id/DailyJobsLabel"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingHorizontal="100dp"
+				android:text="DailyJobs" />
+			
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/DailyJobs"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/text_small_margin"
+				android:paddingHorizontal="100dp"
+				android:paddingVertical="10dp"
+				android:isScrollContainer="false"
+				android:visibility="visible"
+				tools:visibility="visible">
+			
+			</androidx.recyclerview.widget.RecyclerView>
+			
+			<TextView
+				android:id="@+id/EveningJobsLabel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingHorizontal="120dp"
+				android:text="EveningJobs" />
+			
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/EveningJobs"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/text_small_margin"
+				android:paddingHorizontal="120dp"
+				android:paddingVertical="10dp"
+				android:isScrollContainer="false"
+				android:visibility="visible"
+				tools:visibility="visible">
+			
+			</androidx.recyclerview.widget.RecyclerView>
+		
+		</LinearLayout>
+		
+		<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/ReflectorActivity_addJob"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginEnd="40dp"
+			android:layout_marginBottom="40dp"
+			android:clickable="true"
+			android:contentDescription="@string/add_new_job"
+			app:srcCompat="@android:drawable/ic_input_add" />
+	
+	</RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

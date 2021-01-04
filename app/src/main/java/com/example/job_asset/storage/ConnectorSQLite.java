@@ -1,5 +1,7 @@
 package com.example.job_asset.storage;
 
+import com.example.job_asset.common.Constants;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -17,6 +19,7 @@ class ConnectorSQLite {
 	
 	public void Conn() throws ClassNotFoundException, SQLException
 	{
+		String fn = Constants.DATABASE_NAME;
 		connection = null;
 		Class.forName("org.sqlite.JDBC");
 		connection = DriverManager.getConnection("jdbc:sqlite:TEST1.s3db");

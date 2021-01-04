@@ -3,4 +3,24 @@
 	<string name="textview1">TextView default text 1</string>
 	<string name="textview2">TextView default text 1</string>
 	<string name="settings__enable_notifications">Enable notifications</string>
+	<string name="new_job_title">New job title</string>
+	<string name="add_new_job">Add new job</string>
+	<string-array name="animals">
+		<item>Кот</item>
+		<item>Кошка</item>
+		<item>Котёнок</item>
+		<item>Животное</item>
+	</string-array>
+	<string-array name="priority">
+		<item>Low</item>
+		<item>Medium</item>
+		<item>High</item>
+		<item>Urgent</item>
+	</string-array>
+	<string-array name="periods">
+		<item>Morning</item>
+		<item>Day</item>
+		<item>Evening</item>
+	</string-array>
+	
 </resources>

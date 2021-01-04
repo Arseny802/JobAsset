@@ -19,7 +19,15 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
+		<activity android:name=".job_creator.CreationActivity">
+		</activity>
+		<activity android:name=".job_creator.CreationActivityOptionals">
+		</activity>
+		<activity android:name=".backlog.BacklogActivity">
+		</activity>
 		<activity android:name=".settings.SettingsActivity">
+		</activity>
+		<activity android:name=".feedback.FeedbackActivity">
 		</activity>
 	</application>
 	
